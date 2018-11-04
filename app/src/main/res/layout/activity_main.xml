@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <CheckBox
+        android:id="@+id/opt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opt1"
+        />
+
+    <RadioGroup
+        android:id="@+id/years"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/year1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20以下"
+            />
+        <RadioButton
+            android:id="@+id/year2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20~40"
+            />
+        <RadioButton
+            android:id="@+id/year3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="40~60"
+            />
+        <RadioButton
+            android:id="@+id/year4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="60+"
+            />
+
+    </RadioGroup>
+    <ToggleButton
+        android:id="@+id/tbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="No"
+        android:textOn="Yes"
+        />
+
+    <co.ceryle.segmentedbutton.SegmentedButtonGroup
+        android:id="@+id/sbg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="2dp"
+        app:sbg_animateSelector="bounce"
+        app:sbg_animateSelectorDuration="1000"
+        app:sbg_backgroundColor="@color/red_700"
+        app:sbg_borderColor="@color/black"
+        app:sbg_borderSize="1dp"
+        app:sbg_dividerColor="@color/black"
+        app:sbg_dividerPadding="10dp"
+        app:sbg_dividerRadius="10dp"
+        app:sbg_dividerSize="1dp"
+        app:sbg_radius="2dp"
+        app:sbg_selectorColor="@color/black">
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:id="@+id/sop1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            app:sb_rippleColor="@color/blue_500"
+            app:sb_text="Diana"
+            app:sb_textColor="@color/black"
+            app:sb_textColor_onSelection="@color/red_500"
+            />
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:id="@+id/sop2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            app:sb_rippleColor="@color/black"
+            app:sb_text="Batman"
+            app:sb_textColor="@color/black"
+            app:sb_textColor_onSelection="@color/yellow_500"
+            />
+
+
+        <co.ceryle.segmentedbutton.SegmentedButton
+            android:id="@+id/sop3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            app:sb_rippleColor="@color/yellow_500"
+            app:sb_text="Clark"
+            app:sb_textColor="@color/black"
+            app:sb_textColor_onSelection="@color/red_500"
+            />
+
+
+    </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+
+</LinearLayout>
