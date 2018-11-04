@@ -111,5 +111,13 @@
 
 
     </co.ceryle.segmentedbutton.SegmentedButtonGroup>
+    <TextView
+        android:id="@+id/newdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="chDate"
+        android:hint="選日期"
+        />
+
 
 </LinearLayout>
